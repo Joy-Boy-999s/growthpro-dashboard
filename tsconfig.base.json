@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@growthpro-dashboard/shared": ["shared/src/index.ts"],
+      "@growthpro-dashboard/shared-models": ["lib/shared-models/src/index.ts"],
+      "@growthpro-dashboard/shared-services": ["lib/shared-lib/src/index.ts"],
+      "@growthpro-dashboard/shared-utils": ["lib/shared/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
