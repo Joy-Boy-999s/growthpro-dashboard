@@ -49,7 +49,7 @@ export const BusinessProvider = ({ children }: { children: React.ReactNode }) =>
     setError(null);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/regenerate-headline?name=${encodeURIComponent(name)}&location=${encodeURIComponent(location)}`
+        `https://growthpro-dashboard.onrender.com/api/regenerate-headline?name=${encodeURIComponent(name)}&location=${encodeURIComponent(location)}`
       );
 
       if (!response.ok) {
