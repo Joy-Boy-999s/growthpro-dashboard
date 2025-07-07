@@ -20,7 +20,7 @@ export const BusinessProvider = ({ children }: { children: React.ReactNode }) =>
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch('http://localhost:5000/api/business-data', {
+      const response = await fetch('https://growthpro-dashboard.onrender.com/api/business-data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
